@@ -2,7 +2,7 @@
 
 ### SETTINGS ###
  # MAC of PC to be woken.
-MAC=2c:41:38:a7:d8:03
+MAC=XX:XX:XX:XX:XX:XX
  # Path to latest.log
 LOG=~/Servers/Waterfall/logs/latest.log
  # String that triggers the WoL command. (This should be fine if you use Bungeecord or Waterfall. If you are running a regular server use "joined" or something else instead)
