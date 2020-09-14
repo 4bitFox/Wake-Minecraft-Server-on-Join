@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ### SETTINGS ###
  # MAC of PC to be woken.
