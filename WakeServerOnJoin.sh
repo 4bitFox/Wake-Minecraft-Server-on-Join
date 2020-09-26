@@ -5,7 +5,7 @@
 MAC=XX:XX:XX:XX:XX:XX
  # Path to latest.log
 LOG=~/PathToServer/logs/latest.log
- # String that triggers the WoL command. (This should be fine if you use Bungeecord or Waterfall. If you are running a regular server use "joined" or something else instead)
+ # String that triggers the WoL command. (This should be fine if you use Bungeecord or Waterfall.)
 TRIGGER=connected
  # How long to wait between each check in seconds.
 T0=0.5
@@ -35,6 +35,7 @@ done
 
 ## Tips:
 # Run the script after server generates new latest.log if you have problems. (e.g. "sleep 5")
+# Change "fallback_kick" in messages.properties to inform the player to reconnect in a moment. (messages.properties is located in the Bungeecord or Waterfall JAR.)
 
 ## On the main server machine:
 # You can use crontab to launch the server on boot.
