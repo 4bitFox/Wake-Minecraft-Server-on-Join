@@ -36,6 +36,7 @@ done
 ## Tips:
 # Run the script after server generates new latest.log if you have problems. (e.g. "sleep 5")
 # Change "fallback_kick" in messages.properties to inform the player to reconnect in a moment. (messages.properties is located in the Bungeecord or Waterfall JAR.)
+# You can use "jar uf waterfall-*.jar messages.properties" to inject the file.
 
 ## On the main server machine:
 # You can use crontab to launch the server on boot.
