@@ -1,3 +1,7 @@
-# Scripts
-Wake real (Minecraft) Server when a Player joins with Wake on Lan:
-https://github.com/4bitFox/Scripts/blob/master/WakeServerOnJoin.sh
+# [WOL] Wake a Minecraft Server when player joins
+
+#### This has to be run on a (ieally low power) PC like Raspberry Pi that is running 24/7 to detect someone joining!
+#### When a player is detected the real Minecraft server PC is then started with "Wake on Lan".
+
+ToDo:
+- Instructions on how to set up
