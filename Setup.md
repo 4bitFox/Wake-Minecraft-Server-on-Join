@@ -4,11 +4,11 @@
 - Enable WoL on your server PC you plan to wake up. Depends from PC to PC so you are on your own.
 - Setup your Server. I'm using Paper in this guide so I'll use it to explain from now on! You can get PaperMC here: https://papermc.io/downloads Instructions to set up: https://paper.readthedocs.io/en/latest/server/index.html
 - Make a start script for the server. Well need it later!
-- Now you should have a regular PaperMC Minecraft server. In this guide we will set this Server up to be run automatically when the PC boots up and powers off after a while when noone is connected anymore.
+- Now you should have a regular PaperMC Minecraft server. In this guide we will set this Server up to be run automatically when the PC boots up and powers off after a while when no one is connected anymore.
 - To do this I use the "AutoStop" Plugin: https://github.com/pmdevita/AutoStop/releases
 - Download and install this plugin. Change the config as you desire.
 - Now your Server should automatically stop when noone is connected for a while. We want it to power off though! You should have a Shell script to start your Server. You have to add the "poweroff" (or different command dapending on your init system. If you dont know what I'm talking about, you are probably running systemd and can use said previous command.) to the bottom of the file. This should power off the PC when the Minecraft Server stops.
-- I reccomend adding a delay before powering off so you can cancel it to maintain your PC for example. for this ad something like "sleep 15" on a line before the "poweroff" command. Additionally you can use the echo command to print to the console that it's about to power off.
+- I recommend adding a delay before powering off so you can cancel it to maintain your PC for example. For this add something like "sleep 15" on a line before the "poweroff" command. Additionally you can use the echo command to print to the console that it's about to power off.
 
 
 ## Editing the Waterfall JAR
