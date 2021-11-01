@@ -7,17 +7,17 @@
 - Now you should have a regular PaperMC Minecraft server. In this guide we will set this Server up to be run automatically when the PC boots up and powers off after a while when noone is connected anymore.
 - To do this I use the "AutoStop" Plugin: https://github.com/pmdevita/AutoStop/releases
 - Download and install this plugin. Change the config as you desire.
-- Now your Server should automatically stop when noone is connected for a while. We want it to power off tough! You should have a Shell script to start your Server. You have to add the "poweroff" (or different command dapending on your init system. If you dont know what I'm talking about, you are probably running systemd and can use said previous command.) to the bottom of the file. This should power off the PC when the Minecraft Server stops.
+- Now your Server should automatically stop when noone is connected for a while. We want it to power off though! You should have a Shell script to start your Server. You have to add the "poweroff" (or different command dapending on your init system. If you dont know what I'm talking about, you are probably running systemd and can use said previous command.) to the bottom of the file. This should power off the PC when the Minecraft Server stops.
 - I reccomend adding a delay before powering off so you can cancel it to maintain your PC for example. for this ad something like "sleep 15" on a line before the "poweroff" command. Additionally you can use the echo command to print to the console that it's about to power off.
 
 
 ## Editing the Waterfall JAR
 - Download the latest release of Waterfall: https://papermc.io/downloads#Waterfall
-- Extract the messages.propertis from the JAR with an archiver application.
+- Extract the messages.properties from the JAR with an archiver application.
 
    ![Screenshot_20210629_195612](https://user-images.githubusercontent.com/33175205/123845085-10d68680-d914-11eb-8d09-160bd86f9f3d.png)
    
-- Open up the extracted pessages.properties in a text editor. 
+- Open up the extracted messages.properties in a text editor. 
 - Find the "fallback_kick" option and change the message to make it clear that the player has to reconnect in a bit. Example:
 
    ![Screenshot_20210629_200353](https://user-images.githubusercontent.com/33175205/123845997-239d8b00-d915-11eb-9e30-c80b66317e56.png)
@@ -26,7 +26,7 @@
    ![Screenshot_20210629_200929](https://user-images.githubusercontent.com/33175205/123846635-eb4a7c80-d915-11eb-81d6-e96d74f1229f.png)
 - Change other messages if you so desire :)
 - Save the file.
-- Now we have to put your altered version of "messages.propertis" back into the JAR. For that we can use the following command in the terminal: "jar uf waterfall-*.jar messages.properties". You can also use the InjectMessages.sh script which does exactly the same.
+- Now we have to put your altered version of "messages.properties" back into the JAR. For that we can use the following command in the terminal: "jar of waterfall-*.jar messages.properties". You can also use the InjectMessages.sh script which does exactly the same.
 
 ## Configuring Waterfall (to connect to the real server)
 - Now configure waterfall as usual to connect to your server. If you don't know how, here's some links that might help you: 
