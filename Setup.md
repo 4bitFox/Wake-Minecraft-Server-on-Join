@@ -1,4 +1,4 @@
-# How to set up (In Progress and not finished!!!)
+# How to:
 ### ATENTION! This guide is assuming that you are running the Server on a Linux system! Steps will be different on other OSes.
 ## Setting up the real server
 - Enable WoL on your server PC you plan to wake up. Depends from PC to PC so you are on your own.
