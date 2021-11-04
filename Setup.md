@@ -3,7 +3,7 @@
 ## Setting up the real server
 - Enable WoL on your server PC you plan to wake up. Depends from PC to PC so you are on your own.
 - Setup your Server. I'm using Paper in this guide so I'll use it to explain from now on! You can get PaperMC here: https://papermc.io/downloads Instructions to set up: https://paper.readthedocs.io/en/latest/server/index.html
-- Make a start script for the server. Well need it later!
+- Make a start script for the server. We'll need it later!
 - Now you should have a regular PaperMC Minecraft server. In this guide we will set this Server up to be run automatically when the PC boots up and powers off after a while when no one is connected anymore.
 - To do this I use the "AutoStop" Plugin: https://github.com/pmdevita/AutoStop/releases
 - Download and install this plugin. Change the config as you desire.
