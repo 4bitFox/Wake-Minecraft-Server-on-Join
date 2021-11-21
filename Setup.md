@@ -1,5 +1,7 @@
 # How to:
 ### ATENTION! This guide is assuming that you are running the Server on a Linux system! Steps will be different on other OSes.
+- You should also already know how to setup a PamerMC/Spigot Minecraft Server and Waterfall/Bungeecord.
+- Being somewhat familiar with Linux will also help a lot.
 ## Setting up the real server
 - Enable WoL on your server PC you plan to wake up. Depends from PC to PC so you are on your own.
 - Setup your Server. I'm using Paper in this guide so I'll use it to explain from now on! You can get PaperMC here: https://papermc.io/downloads Instructions to set up: https://paper.readthedocs.io/en/latest/server/index.html
@@ -29,6 +31,17 @@
 - Now we have to put your altered version of "messages.properties" back into the JAR. For that we can use the following command in the terminal: "jar of waterfall-*.jar messages.properties". You can also use the InjectMessages.sh script which does exactly the same.
 
 ## Configuring Waterfall (to connect to the real server)
-- Now configure waterfall as usual to connect to your server. If you don't know how, here's some links that might help you: 
+- Now configure waterfall as usual to start and connect to your server. If you don't know how, here's some links that might help you: 
   - https://paper.readthedocs.io/en/latest/waterfall/index.html
   - https://www.spigotmc.org/wiki/bungeecord-configuration-guide/
+
+## Wake the Server when a player joins
+- Hopefully you now have a working waterfall configuration which you can join if the real Server PC is already running.
+- Now we have to start the real PC automatically when someone joins. Put the WakeServerOnJoin.sh script into the foler you previously setup waterfall in.
+- Open the script in a text editor and adjust the values. Put the MAC adress of the PC you want to start when someone joins and the path to waterfalls logfile. Example:
+![Screenshot from 2021-11-21 11-35-47](https://user-images.githubusercontent.com/33175205/142758500-d7a9bfa1-4c16-4baa-abc5-fcac4fc2455b.png)
+- Uncomment which command you want to use to send a WoL signal. "wakeonlan" is uncommented by default!
+![Screenshot from 2021-11-21 11-47-49](https://user-images.githubusercontent.com/33175205/142758834-43cec19c-d937-46b7-be87-e271802ffa33.png)
+- Save the file and give it permissions to run: "chmod +x WakeServerOnJoin.sh"
+- Run it with "./WakeServerOnJoin.sh" (Make sure that Waterfall is already running!)
+- If everything worked the real server schould now start. After waiting a short amount of time you should be able to reconnect and be forwarded to the real Server. Bravo! You are done.
