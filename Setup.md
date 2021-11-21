@@ -28,7 +28,7 @@
    ![Screenshot_20210629_200929](https://user-images.githubusercontent.com/33175205/123846635-eb4a7c80-d915-11eb-81d6-e96d74f1229f.png)
 - Change other messages if you so desire :)
 - Save the file.
-- Now we have to put your altered version of "messages.properties" back into the JAR. For that we can use the following command in the terminal: "jar of waterfall-*.jar messages.properties". You can also use the InjectMessages.sh script which does exactly the same.
+- Now we have to put your altered version of "messages.properties" back into the JAR. For that we can use the following command in the terminal: "jar of waterfall-*.jar messages.properties".
 
 ## Configuring Waterfall (to connect to the real server)
 - Now configure waterfall as usual to start and connect to your server. If you don't know how, here's some links that might help you: 
